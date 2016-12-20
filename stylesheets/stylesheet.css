@@ -1,0 +1,177 @@
+/* line 5, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* for Bootstrap */
+/* line 4, ../sass/stylesheet.scss */
+.no-margin {
+  margin: 0 !important;
+}
+
+/* line 5, ../sass/stylesheet.scss */
+.no-gutter > [class*='col-'] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+/* line 17, ../sass/stylesheet.scss */
+.left {
+  float: left;
+}
+
+/* line 18, ../sass/stylesheet.scss */
+.right {
+  float: right;
+}
+
+/* line 20, ../sass/stylesheet.scss */
+a:hover {
+  text-decoration: none;
+}
+
+/* line 24, ../sass/stylesheet.scss */
+body {
+  background-color: #25091b;
+  color: #636363;
+}
+
+/* Header */
+/* line 29, ../sass/stylesheet.scss */
+#header {
+  padding: 80px;
+  background-color: #ffffff;
+}
+/* line 32, ../sass/stylesheet.scss */
+#header h1 {
+  text-align: center;
+  font-size: 60px;
+}
+
+/* Navbar */
+/* line 38, ../sass/stylesheet.scss */
+.navbar-default {
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  background-color: #5a1642;
+  border: none;
+  margin-bottom: 0;
+}
+/* line 43, ../sass/stylesheet.scss */
+.navbar-default .navbar-nav {
+  margin-left: 250px;
+}
+/* line 45, ../sass/stylesheet.scss */
+.navbar-default .navbar-nav li > a {
+  text-transform: uppercase;
+  margin: 10px 35px 10px 0;
+  color: #ffffff;
+  padding: 10px 30px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+/* line 51, ../sass/stylesheet.scss */
+.navbar-default .navbar-nav li > a:hover, .navbar-default .navbar-nav li > a:focus {
+  background-color: #a8297b;
+  color: #ffffff;
+  transition: 0.7s;
+}
+
+/* line 59, ../sass/stylesheet.scss */
+#head-img {
+  width: 100%;
+  background-size: cover;
+}
+
+/* Content */
+/* line 66, ../sass/stylesheet.scss */
+#content {
+  text-align: justify;
+  background-color: #ffffff;
+}
+/* line 69, ../sass/stylesheet.scss */
+#content img {
+  width: 300px;
+}
+/* line 72, ../sass/stylesheet.scss */
+#content h1 {
+  text-align: center;
+}
+/* line 75, ../sass/stylesheet.scss */
+#content button {
+  background-color: #5a1642;
+  padding: 10px 30px;
+  color: #ffffff;
+  float: left;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+/* line 81, ../sass/stylesheet.scss */
+#content button:hover {
+  background-color: #a8297b;
+  color: #ffffff;
+  transition: 0.7s;
+}
