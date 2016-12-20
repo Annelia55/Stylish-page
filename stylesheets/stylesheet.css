@@ -75,41 +75,78 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   padding-left: 0;
 }
 
-/* line 17, ../sass/stylesheet.scss */
+/* line 19, ../sass/stylesheet.scss */
+#content button {
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  background-color: #5a1642;
+  padding: 10px 10px;
+  color: #ffffff;
+  font-size: 10px;
+  float: left;
+  border: none;
+  text-transform: uppercase;
+}
+/* line 28, ../sass/stylesheet.scss */
+#content button:hover {
+  background-color: #a8297b;
+  transition: 0.7s;
+}
+
+/* line 33, ../sass/stylesheet.scss */
+#content p {
+  text-align: justify;
+  padding: 20px 0 10px 0;
+  line-height: 20px;
+}
+
+/**/
+/* line 40, ../sass/stylesheet.scss */
 .left {
   float: left;
 }
 
-/* line 18, ../sass/stylesheet.scss */
+/* line 41, ../sass/stylesheet.scss */
 .right {
   float: right;
 }
 
-/* line 20, ../sass/stylesheet.scss */
+/* line 43, ../sass/stylesheet.scss */
 a:hover {
   text-decoration: none;
 }
 
-/* line 24, ../sass/stylesheet.scss */
+/* line 47, ../sass/stylesheet.scss */
 body {
   background-color: #25091b;
   color: #636363;
+  font-size: 14px;
 }
 
 /* Header */
-/* line 29, ../sass/stylesheet.scss */
+/* line 53, ../sass/stylesheet.scss */
 #header {
-  padding: 80px;
+  padding: 50px;
   background-color: #ffffff;
 }
-/* line 32, ../sass/stylesheet.scss */
+/* line 56, ../sass/stylesheet.scss */
 #header h1 {
   text-align: center;
   font-size: 60px;
 }
+/* line 59, ../sass/stylesheet.scss */
+#header h1 a {
+  color: #5a1642;
+}
+/* line 61, ../sass/stylesheet.scss */
+#header h1 a:hover {
+  color: #a8297b;
+  transition: 0.7s;
+}
 
 /* Navbar */
-/* line 38, ../sass/stylesheet.scss */
+/* line 69, ../sass/stylesheet.scss */
 .navbar-default {
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
@@ -118,11 +155,11 @@ body {
   border: none;
   margin-bottom: 0;
 }
-/* line 43, ../sass/stylesheet.scss */
+/* line 74, ../sass/stylesheet.scss */
 .navbar-default .navbar-nav {
   margin-left: 250px;
 }
-/* line 45, ../sass/stylesheet.scss */
+/* line 76, ../sass/stylesheet.scss */
 .navbar-default .navbar-nav li > a {
   text-transform: uppercase;
   margin: 10px 35px 10px 0;
@@ -132,46 +169,58 @@ body {
   -webkit-border-radius: 10px;
   border-radius: 10px;
 }
-/* line 51, ../sass/stylesheet.scss */
+/* line 82, ../sass/stylesheet.scss */
 .navbar-default .navbar-nav li > a:hover, .navbar-default .navbar-nav li > a:focus {
   background-color: #a8297b;
   color: #ffffff;
   transition: 0.7s;
 }
 
-/* line 59, ../sass/stylesheet.scss */
+/* line 90, ../sass/stylesheet.scss */
 #head-img {
   width: 100%;
   background-size: cover;
 }
 
 /* Content */
-/* line 66, ../sass/stylesheet.scss */
+/* line 95, ../sass/stylesheet.scss */
 #content {
-  text-align: justify;
   background-color: #ffffff;
+  padding: 40px 10px 40px 10px;
 }
-/* line 69, ../sass/stylesheet.scss */
-#content img {
-  width: 300px;
+/* line 99, ../sass/stylesheet.scss */
+#content .main-article h2 {
+  margin-bottom: 20px;
 }
-/* line 72, ../sass/stylesheet.scss */
-#content h1 {
-  text-align: center;
+/* line 102, ../sass/stylesheet.scss */
+#content .main-article p {
+  line-height: 20px;
 }
-/* line 75, ../sass/stylesheet.scss */
-#content button {
-  background-color: #5a1642;
-  padding: 10px 30px;
-  color: #ffffff;
-  float: left;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
+/* line 105, ../sass/stylesheet.scss */
+#content .main-article img {
+  max-width: 100%;
+  height: auto;
 }
-/* line 81, ../sass/stylesheet.scss */
-#content button:hover {
-  background-color: #a8297b;
-  color: #ffffff;
+/* line 110, ../sass/stylesheet.scss */
+#content h2 {
+  font-size: 24px;
+}
+/* line 119, ../sass/stylesheet.scss */
+#content .article {
+  border-bottom: 1px solid #e3e3e3;
+  padding-bottom: 20px;
+}
+/* line 123, ../sass/stylesheet.scss */
+#content li {
+  padding: 12px 0 12px 0;
+  border-bottom: 1px solid #e3e3e3;
+}
+/* line 126, ../sass/stylesheet.scss */
+#content li > a {
+  color: #a02775;
+}
+/* line 128, ../sass/stylesheet.scss */
+#content li > a:hover {
+  color: #d657a9;
   transition: 0.7s;
 }

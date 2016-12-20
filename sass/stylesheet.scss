@@ -12,26 +12,57 @@ $bg-main: #ffffff;
 $link-color: #ffffff;
 $default-transition-duration: 0.7s;
 $link-padding: 10px 30px;
+$text-color: #636363;
+$h2-font-size: 24px;
+$def-font-size: 14px;
 
+%button {
+  @include border-radius(20px);
+  background-color: lighten($bg-body, 13%);
+  padding: 10px 10px;
+  color: $link-color;
+  font-size: $def-font-size - 4px;
+  float: left;
+  border: none;
+  text-transform: uppercase;
+  &:hover {
+    background-color: lighten($bg-body, 32%);
+    transition: $default-transition-duration;
+  }
+}
+%p-font {
+  text-align: justify;
+  padding: 20px 0 10px 0;
+  line-height: 20px;
+}
 
+/**/
 .left {float: left;}
 .right {float: right;}
 a {
-  &:hover {
+  &:hover  {
     text-decoration: none;
   }
 }
 body {
   background-color: $bg-body;
-  color: #636363;
+  color: $text-color;
+  font-size: $def-font-size;
 }
 /* Header */
 #header {
-  padding: 80px;
+  padding: 50px;
   background-color: $bg-main;
-  h1 {
-    text-align: center;
-    font-size: 60px;
+    h1 {
+      text-align: center;
+      font-size: 60px;
+      a {
+      color: lighten($bg-body, 13%);
+      &:hover {
+        color: lighten($bg-body, 32%);
+        transition: $default-transition-duration;
+      }
+    }
   }
 }
 /* Navbar */
@@ -58,30 +89,46 @@ body {
 }
 #head-img {
   width: 100%;
-  //height: 360px;
-  //background-image: url("../img/head.jpg");
   background-size: cover;
 }
 /* Content */
 #content {
-  text-align: justify;
   background-color: $bg-main;
+  padding: 40px 10px 40px 10px;
+  .main-article {
+    h2 {
+      margin-bottom: 20px;
+    }
+    p {
+      line-height: 20px;
+    }
     img {
-      width: 300px;
+      max-width: 100%;
+      height: auto;
     }
-    h1 {
-      text-align: center;
+  }
+  h2 {
+    font-size: $h2-font-size
+  }
+  p {
+    @extend %p-font;
+  }
+  button {
+    @extend %button;
     }
-    button {
-      background-color: lighten($bg-body, 13%);
-      padding: $link-padding;
-      color: $link-color;
-      float: left;
-      @include border-radius(10px);
+  .article {
+    border-bottom: 1px solid lighten($text-color, 50%);
+    padding-bottom: 20px;
+  }
+  li {
+    padding: 12px 0 12px 0;
+    border-bottom: 1px solid lighten($text-color, 50%);
+    & > a {
+      color: lighten($bg-body, 30%);
         &:hover {
-          background-color: lighten($bg-body, 32%);
-          color: $link-color;
+          color: lighten($bg-body, 50%);
           transition: $default-transition-duration;
         }
     }
+  }
 }
