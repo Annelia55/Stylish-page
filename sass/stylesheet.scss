@@ -1,4 +1,4 @@
-@import "compass", "compass/reset", "media-queries", "compass/css3", "compass/css3/border-radius";
+@import "compass", "compass/reset", "media-queries", "compass/css3/font-face", "compass/css3/border-radius";
 
 @include font-face("Corben", font-files("../font/Corben.ttf"));
 
@@ -60,14 +60,12 @@ body {
   color: $text-color;
   font-size: $def-font-size;
 }
-h1 {
-  font-family: 'Corben', sans-serif;
-}
 /* Header */
 #header {
   padding: 50px;
   background-color: $bg-main;
     h1 {
+      font-family: 'Corben', sans-serif;
       text-align: center;
       font-size: 60px;
       color: lighten($bg-body, 13%);

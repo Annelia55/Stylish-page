@@ -141,26 +141,22 @@ body {
   font-size: 14px;
 }
 
-/* line 63, ../sass/stylesheet.scss */
-h1 {
-  font-family: 'Corben', sans-serif;
-}
-
 /* Header */
-/* line 67, ../sass/stylesheet.scss */
+/* line 64, ../sass/stylesheet.scss */
 #header {
   padding: 50px;
   background-color: #ffffff;
 }
-/* line 70, ../sass/stylesheet.scss */
+/* line 67, ../sass/stylesheet.scss */
 #header h1 {
+  font-family: 'Corben', sans-serif;
   text-align: center;
   font-size: 60px;
   color: #5a1642;
 }
 
 /* Navbar */
-/* line 78, ../sass/stylesheet.scss */
+/* line 76, ../sass/stylesheet.scss */
 .navbar-default {
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
@@ -169,11 +165,11 @@ h1 {
   border: none;
   margin-bottom: 0;
 }
-/* line 83, ../sass/stylesheet.scss */
+/* line 81, ../sass/stylesheet.scss */
 .navbar-default .navbar-nav {
   margin-left: 230px;
 }
-/* line 85, ../sass/stylesheet.scss */
+/* line 83, ../sass/stylesheet.scss */
 .navbar-default .navbar-nav li > a {
   text-transform: uppercase;
   margin: 10px 35px 10px 0;
@@ -183,132 +179,132 @@ h1 {
   -webkit-border-radius: 10px;
   border-radius: 10px;
 }
-/* line 91, ../sass/stylesheet.scss */
+/* line 89, ../sass/stylesheet.scss */
 .navbar-default .navbar-nav li > a:hover, .navbar-default .navbar-nav li > a:focus {
   background-color: #a8297b;
   color: #ffffff;
   transition: 0.7s;
 }
 
-/* line 99, ../sass/stylesheet.scss */
+/* line 97, ../sass/stylesheet.scss */
 #head-img {
   width: 100%;
   background-size: cover;
 }
 
 /* Content */
-/* line 116, ../sass/stylesheet.scss */
+/* line 114, ../sass/stylesheet.scss */
 #content {
   background-color: #ffffff;
   padding: 40px 15px 60px 15px;
 }
-/* line 120, ../sass/stylesheet.scss */
+/* line 118, ../sass/stylesheet.scss */
 #content .main-article p {
   line-height: 20px;
 }
-/* line 123, ../sass/stylesheet.scss */
+/* line 121, ../sass/stylesheet.scss */
 #content .main-article img {
   max-width: 100%;
   height: auto;
 }
-/* line 128, ../sass/stylesheet.scss */
+/* line 126, ../sass/stylesheet.scss */
 #content ul {
   margin-top: 5px;
 }
-/* line 130, ../sass/stylesheet.scss */
+/* line 128, ../sass/stylesheet.scss */
 #content ul li {
   padding: 12px 0 12px 0;
 }
-/* line 133, ../sass/stylesheet.scss */
+/* line 131, ../sass/stylesheet.scss */
 #content ul li > a {
   color: #a02775;
 }
-/* line 135, ../sass/stylesheet.scss */
+/* line 133, ../sass/stylesheet.scss */
 #content ul li > a:hover {
   color: #d657a9;
   transition: 0.7s;
 }
 
-/* line 143, ../sass/stylesheet.scss */
+/* line 141, ../sass/stylesheet.scss */
 #content-2 {
   background-color: #dcdcdc;
   padding: 40px 15px 60px 15px;
 }
-/* line 146, ../sass/stylesheet.scss */
+/* line 144, ../sass/stylesheet.scss */
 #content-2 .date {
   font-size: 12px;
 }
-/* line 149, ../sass/stylesheet.scss */
+/* line 147, ../sass/stylesheet.scss */
 #content-2 button {
   float: right;
 }
 
 /* @media */
 @media only screen and (max-width: 1199px) {
-  /* line 157, ../sass/stylesheet.scss */
+  /* line 155, ../sass/stylesheet.scss */
   .navbar-default .navbar-nav {
     margin-left: 110px;
   }
 }
 @media only screen and (max-width: 991px) {
-  /* line 164, ../sass/stylesheet.scss */
+  /* line 162, ../sass/stylesheet.scss */
   .navbar-default .navbar-nav {
     margin-left: 40px;
   }
-  /* line 166, ../sass/stylesheet.scss */
+  /* line 164, ../sass/stylesheet.scss */
   .navbar-default .navbar-nav li > a {
     margin: 5px 15px 5px 0;
   }
 
-  /* line 172, ../sass/stylesheet.scss */
+  /* line 170, ../sass/stylesheet.scss */
   #content .right-sector {
     margin: 50px 0 0 0;
   }
-  /* line 175, ../sass/stylesheet.scss */
+  /* line 173, ../sass/stylesheet.scss */
   #content p {
     padding: 20px 0 8px 0;
   }
 }
 @media only screen and (max-width: 768px) {
-  /* line 181, ../sass/stylesheet.scss */
+  /* line 179, ../sass/stylesheet.scss */
   #head-img {
     display: none;
   }
 
-  /* line 184, ../sass/stylesheet.scss */
+  /* line 182, ../sass/stylesheet.scss */
   #header {
     padding: 25px;
   }
-  /* line 186, ../sass/stylesheet.scss */
+  /* line 184, ../sass/stylesheet.scss */
   #header h1 {
     font-size: 50px;
   }
 
-  /* line 190, ../sass/stylesheet.scss */
+  /* line 188, ../sass/stylesheet.scss */
   h2 {
     text-align: center;
     margin-top: 40px;
   }
 
-  /* line 194, ../sass/stylesheet.scss */
+  /* line 192, ../sass/stylesheet.scss */
   #content {
     padding: 0 0 30px 0;
   }
-  /* line 197, ../sass/stylesheet.scss */
+  /* line 195, ../sass/stylesheet.scss */
   #content .main-article img {
     max-width: 80%;
     height: auto;
   }
-  /* line 201, ../sass/stylesheet.scss */
+  /* line 199, ../sass/stylesheet.scss */
   #content .main-article button {
     float: right;
   }
-  /* line 205, ../sass/stylesheet.scss */
+  /* line 203, ../sass/stylesheet.scss */
   #content .article {
     padding-bottom: 45px;
   }
 
-  /* line 209, ../sass/stylesheet.scss */
+  /* line 207, ../sass/stylesheet.scss */
   #content-2 {
     padding: 0 0 30px 0;
   }
