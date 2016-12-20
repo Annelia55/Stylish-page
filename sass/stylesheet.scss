@@ -13,9 +13,18 @@ $link-color: #ffffff;
 $default-transition-duration: 0.7s;
 $link-padding: 10px 30px;
 $text-color: #636363;
-$h2-font-size: 24px;
 $def-font-size: 14px;
+$content-padding: 40px 15px 60px 15px;
 
+%h2-font {
+  font-size: 24px;
+  color: darken($text-color, 20%);
+  margin-bottom: 20px;
+}
+%divider {
+  border-bottom: 1px solid lighten($text-color, 40%);
+  padding-bottom: 20px;
+}
 %button {
   @include border-radius(20px);
   background-color: lighten($bg-body, 13%);
@@ -56,15 +65,10 @@ body {
     h1 {
       text-align: center;
       font-size: 60px;
-      a {
       color: lighten($bg-body, 13%);
-      &:hover {
-        color: lighten($bg-body, 32%);
-        transition: $default-transition-duration;
-      }
     }
   }
-}
+
 /* Navbar */
 .navbar-default {
   @include border-radius(0);
@@ -72,7 +76,7 @@ body {
   border: none;
   margin-bottom: 0;
   .navbar-nav {
-    margin-left: 250px;
+    margin-left: 230px;
     li > a {
       text-transform: uppercase;
       margin: 10px 35px 10px 0;
@@ -92,13 +96,23 @@ body {
   background-size: cover;
 }
 /* Content */
+h2 {
+  @extend %h2-font;
+}
+p {
+  @extend %p-font;
+}
+button {
+  @extend %button;
+}
+.article {
+  @extend %divider;
+}
+
 #content {
   background-color: $bg-main;
-  padding: 40px 10px 40px 10px;
+  padding: $content-padding;
   .main-article {
-    h2 {
-      margin-bottom: 20px;
-    }
     p {
       line-height: 20px;
     }
@@ -107,28 +121,28 @@ body {
       height: auto;
     }
   }
-  h2 {
-    font-size: $h2-font-size
+  ul {
+    margin-top: 5px;
+    li {
+      padding: 12px 0 12px 0;
+      @extend %divider;
+      & > a {
+        color: lighten($bg-body, 30%);
+          &:hover {
+            color: lighten($bg-body, 50%);
+            transition: $default-transition-duration;
+          }
+      }
+    }
   }
-  p {
-    @extend %p-font;
-  }
+}
+#content-2 {
+  background-color: #dcdcdc;
+  padding: $content-padding;
+    .date {
+      font-size: $def-font-size - 2px;
+    }
   button {
-    @extend %button;
-    }
-  .article {
-    border-bottom: 1px solid lighten($text-color, 50%);
-    padding-bottom: 20px;
-  }
-  li {
-    padding: 12px 0 12px 0;
-    border-bottom: 1px solid lighten($text-color, 50%);
-    & > a {
-      color: lighten($bg-body, 30%);
-        &:hover {
-          color: lighten($bg-body, 50%);
-          transition: $default-transition-duration;
-        }
-    }
+    float: right;
   }
 }
