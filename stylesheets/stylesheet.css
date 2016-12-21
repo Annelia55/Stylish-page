@@ -65,7 +65,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 @font-face {
   font-family: "Corben";
-  src: url('/fonts/../font/Corben.ttf') format('truetype');
+  src: url('../fonts/Corben.ttf') format('truetype');
 }
 /* for Bootstrap */
 /* line 6, ../sass/stylesheet.scss */
@@ -149,7 +149,7 @@ body {
 }
 /* line 67, ../sass/stylesheet.scss */
 #header h1 {
-  font-family: 'Corben', sans-serif;
+  font-family: 'Corben', cursive;
   text-align: center;
   font-size: 60px;
   color: #5a1642;
